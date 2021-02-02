@@ -1,0 +1,329 @@
+/* Fonts */
+@font-face{
+    font-family: "SourceSans";
+    src: url(fonts/SourceSansPro-Regular.otf);
+    font-style: normal;
+}
+@font-face{
+    font-family: "SpinCycle";
+    src: url(fonts/spincycle_ot.otf);
+    font-style: normal;
+}
+@font-face{
+    font-family: 'holbertonIcons';
+    src: url(fonts/holberton_school-icon.ttf);
+    font-style: normal;
+}
+
+/* Root variables */
+:root{
+    --flex-display: flex;
+    --flex-wrap: wrap;
+    --flex-nowrap: nowrap;
+    --flex-row: row;
+    --flex-column: column;
+    --flex-between: space-between;
+    --flex-evenly: space-evenly;
+    --flex-around: space-around;
+    --color-white: #ffffff;
+    --color-global: #FF6565;
+    --color-black: #000000;
+    --color-button: #f75555;
+    --title-h1-size: 250%;
+    --regular-p-size: 1rem;
+}
+
+/* global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.global_button{
+    border-radius: 20px 20px 20px 20px;
+    padding: 12px 25px 12px 25px;
+    background-color: var(--color-button);
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: SourceSans;
+}
+.global_button:hover{
+    background-color:  var(--color-global);
+}
+.icons{
+    color: var(--color-global);
+    font-size: 10rem;
+    font-family: holbertonIcons;
+}
+
+/* first section */
+
+.first_section{
+    background-image: url('images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: auto;
+    min-height: 100vh;
+    display: var(--flex-display);
+    flex-flow: var(--flex-column) var(--flex-nowrap);
+    justify-content: var(--flex-between);
+    align-items: center;
+}
+
+/* Nav styles */
+.nav {
+    min-height: 70px;
+    max-height: auto;
+    display: var(--flex-display);
+    flex-flow: var(--flex-row) var(--flex-wrap);
+    justify-content: var(--flex-between);
+    align-items: center;
+    width: 100%;
+}
+.nav label, .nav input{
+    position: absolute;
+    display: none;
+    justify-self: start;
+    top: 3.5%;
+    font-size: 26px;
+    color: var(--color-white);
+    left: 5%;
+}
+.nav #toggle {
+    display: none;
+}
+.nav .logo{
+    width: 40%;
+    height: 70px;
+    display: var(--flex-display);
+    justify-content: center;
+    align-items: center;
+}
+.nav .logo img{
+    width: 200px;
+    height: 40px;
+}
+.nav ul{
+    width: 40%;
+    list-style: none;
+    display: var(--flex-display);
+    flex-flow: var(--flex-row) var(--flex-nowrap);
+    justify-content: var(--flex-evenly);
+}
+.nav ul a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: SourceSans;
+    font-size: 15px;
+}
+.nav ul a:hover{
+    color: var(--color-global);
+}
+
+/* content header styles */
+.content_header{
+    display: var(--flex-display);
+    flex-flow: var(--flex-column) var(--flex-wrap);
+    align-items: center;
+    width: 70%;
+    margin-top: 30%;
+}
+.content_header h1{
+    font-size: var(--title-h1-size);
+    color: var(--color-white);
+    font-family: SourceSans;
+    text-align: center;
+}
+.content_header p{
+    color: var(--color-white);
+    font-size: var(--regular-p-size);
+    font-family: SourceSans;
+}
+.content_header h1 + p{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.content_header a + p{
+    margin: 70px 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+/* What we do section styles */
+.what_we_do{
+    display: var(--flex-display);
+    flex-flow: var(--flex-column) var(--flex-wrap);
+    width: 100%;
+}
+.what_we_do .intro{
+    display: var(--flex-display);
+    flex-flow: var(--flex-column) var(--flex-wrap);
+    align-items: center;
+    width: 100%;
+}
+.what_we_do .intro h1{
+    font-size: var(--title-h1-size);
+    font-family: SourceSans;
+    text-align: center;
+    margin-top: 100px;
+}
+.what_we_do .intro p{
+    margin-top: 4%;
+    font-family: SourceSans;
+    width: 50%;
+    text-align: center;
+}
+.what_we_do .cards{
+    display: var(--flex-display);
+    flex-flow: var(--flex-row) var(--flex-wrap);
+    justify-content: var(--flex-evenly);
+    margin-top: 7%;
+    margin-bottom: 7%;
+    width: 100%;
+}
+.what_we_do .cards .target{
+    display: var(--flex-display);
+    flex-flow: var(--flex-column) var(--flex-wrap);
+    justify-content: var(--flex-evenly);
+    align-items: center;
+    width: 200px;
+}
+.what_we_do .cards .target h2{
+    font-family: SourceSans;
+    margin-top: 10px 8px;
+}
+.what_we_do .cards .target h2 +p{
+    text-align: center;
+    line-height: 35px;
+    margin-top: 10%;
+}
+
+/* Our results section */
+.results_section{
+    background-image: url('images/headphones_hero_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: auto;
+    min-height: 100vh;
+    color: var(--color-white);
+}
+.results_section .intro p{
+    color: rgb(170, 169, 169);
+}
+
+.results_section .pentagon{
+    background-image: url('images/pentagone.png');
+    background-size: 180px 170px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    display: var(--flex-display);
+    flex-flow: var(--flex-column) var(--flex-wrap);
+    justify-content: center;
+    align-items: center;
+}
+.results_section .pentagon h1{
+    font-family: SourceSans;
+    font-size: var(--title-h1-size);
+}
+.results_section .pentagon p{
+    font-family: SourceSans;
+}
+
+/* media queries 700px */
+@media only screen and (max-width: 700px){
+    /* nav mediea query styles */
+    .nav ul a{
+        font-size: 13px;
+    }
+    /* content header media quiery styles */
+
+    .content_header h1{
+        font-size: 2em;
+    }
+    .content_header h1 + p{
+        margin-top: 30px;
+    }
+    .content_header a + p{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    /* What we do media queries section styles */
+    .what_we_do .intro p{
+        margin-top: 7%;
+        width: 80%;
+
+    }
+    .what_we_do .cards{
+        margin-top: 18%;
+    }
+}
+/* media queries 400px */
+@media only screen and (max-width: 400px) {
+    /* nav mediea query styles */
+    .nav label, .nav input{
+        display: block;
+    }
+    .nav .logo{
+        width: 100%;
+        height: 80px;
+    }
+    .nav .logo img{
+        width: 40%;
+        height: 50%;
+    }
+    .nav .menu{
+        display: none;
+    }
+    .nav ul a{
+        font-size: 18px;
+    }
+
+    #toggle:checked + .menu{
+        width: 100%;
+        display: var(--flex-display);
+        flex-flow: var(--flex-column) var(--flex-wrap);
+        align-items: center;
+    }
+    #toggle:checked + .menu li{
+        height: 50px;
+        display: var(--flex-display);
+        align-items: center;
+    }
+
+    /* content header media quiery styles */
+    .content_header{
+        width: 90%;
+    }
+    .content_header a + p{
+        width: 80%;
+    }
+
+    /* What we do media queries section styles */
+    .what_we_do .intro h1{
+        margin-top: 40%;
+    }
+    .what_we_do .intro p{
+        margin-top: 10%;
+        width: 80%;
+    }
+    .what_we_do .cards .target{
+        margin-top: 20%;
+    }
+    .what_we_do .cards:last-child{
+        margin-bottom: 40%;
+    }
+
+    /* Our results media queries section */
+    .results_section .intro h1{
+        font-size: 2rem;
+    }
+    .results_section .cards .pentagon{
+        margin-top: 7%;
+    }
+}
