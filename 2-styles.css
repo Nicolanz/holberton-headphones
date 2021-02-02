@@ -212,7 +212,7 @@
     color: var(--color-white);
 }
 .results_section .intro p{
-    color: rgb(170, 169, 169);
+    color: #eeeded;
 }
 
 .results_section .pentagon{
