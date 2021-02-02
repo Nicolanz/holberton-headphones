@@ -1,6 +1,6 @@
 <h1 align = "center">0x09. Implement a design from scratch</h1><br>
 <p align="center">
-    <img width="200" height="200" src="images/titleImageReadme.jpeg">
+    <img width="330" height="200" src="images/titleImageReadme.jpeg">
 </p>
 
 ------------
@@ -35,12 +35,12 @@ As it is just a page with static content, you may download this repository and o
 
 ### Tablet view:
 <p align="center">
-    <img width="500" height="850" src="images/01_headphones_tablet@2x.png">
+    <img width="390" height="850" src="images/01_headphones_tablet@2x.png">
 </p>
 
 ### Mobile view:
 <p align="center">
-    <img width="500" height="850" src="images/01_headphones_mobile@2x.png">
+    <img width="300" height="850" src="images/01_headphones_mobile@2x.png">
 </p>
 
 ------------
