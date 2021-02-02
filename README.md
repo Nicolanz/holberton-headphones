@@ -35,12 +35,12 @@ As it is just a page with static content, you may download this repository and o
 
 ### Tablet view:
 <p align="center">
-    <img width="350" height="850" src="images/01_headphones_tablet@2x.png">
+    <img width="290" height="850" src="images/01_headphones_tablet@2x.png">
 </p>
 
 ### Mobile view:
 <p align="center">
-    <img width="200" height="850" src="images/01_headphones_mobile@2x.png">
+    <img width="200" height="700" src="images/01_headphones_mobile@2x.png">
 </p>
 
 ------------
