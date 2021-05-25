@@ -53,7 +53,7 @@
     background-color: var(--color-button);
     color: var(--color-white);
     text-decoration: none;
-    font-family: SourceSans;
+    font-family: var(--font-source_sans);
 }
 a:hover, a:active{
     color: var(--color-global);
@@ -286,7 +286,7 @@ button:hover, button:active{
 
 @media only screen and (max-width: 767px){
     
-    /* First section: 767px */
+    /** First section: 767px **/
 
     /* Nav mediea query styles 
         =============================== */
@@ -364,7 +364,7 @@ button:hover, button:active{
         margin-bottom: 40%;
     }
 
-    /* Our results section: 480px */
+    /** Our results section: 480px **/
 
     .results_section .intro h1{
         font-size: 2rem;
