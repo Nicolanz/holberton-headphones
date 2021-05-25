@@ -55,8 +55,13 @@
     text-decoration: none;
     font-family: SourceSans;
 }
-.global_button:hover{
-    background-color: var(--color-global);
+a:hover, a:active{
+    color: var(--color-global);
+}
+.global_button:hover, .global_button:active,
+button:hover, button:active{
+    color: var(--color-white);
+    opacity: 0.9;
 }
 .icons{
     color: var(--color-global);
@@ -121,7 +126,7 @@
     font-family: var(--font-source_sans);
     font-size: 15px;
 }
-.nav ul a:hover{
+.nav ul a:hover, .nav ul a:active{
     color: var(--color-global);
 }
 .nav #toggle {
