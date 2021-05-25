@@ -1,4 +1,14 @@
 
+/* Summary:
+1. Fonts
+2. Root Variables
+3. Global styles
+4. First section
+5. Media queries - 767px
+6. Media queries - 480px
+*/
+
+
 /*** Fonts ***/
 
 @font-face{
@@ -15,6 +25,7 @@
 /*** Root variables ***/
 
 :root{
+    /** flex definitions **/
     --flex-display: flex;
     --flex-wrap: wrap;
     --flex-nowrap: nowrap;
@@ -23,11 +34,15 @@
     --flex-between: space-between;
     --flex-evenly: space-evenly;
     --flex-around: space-around;
+
+    /** color definitions **/
     --color-white: #ffffff;
     --color-global: #FF6565;
     --color-black: #000000;
     --color-button: #f75555;
     --color-transparent: transparent;
+
+    /** fonts and font size definitions **/
     --font-source_sans: SourceSans;
     --font-holberton_icons: holbertonIcons;
     --title-h1-size: 250%;
@@ -36,11 +51,15 @@
 
 /*** Global styles ***/
 
-* {
+*, *:before, *:after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+/** max width of the content: 1000px centered in the page **/
 /* body > *{
     max-width: 1000px;
     margin: auto;
