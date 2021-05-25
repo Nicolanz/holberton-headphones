@@ -207,13 +207,13 @@
 }
 .what_we_do .intro h1{
     font-size: var(--title-h1-size);
-    font-family: SourceSans;
+    font-family: var(--font-source_sans);
     text-align: center;
     margin-top: 100px;
 }
 .what_we_do .intro p{
     margin-top: 4%;
-    font-family: SourceSans;
+    font-family: var(--font-source_sans);
     width: 50%;
     text-align: center;
 }
@@ -233,10 +233,10 @@
     width: 200px;
 }
 .what_we_do .cards .target h2{
-    font-family: SourceSans;
+    font-family: var(--font-source_sans);
     margin-top: 10px 8px;
 }
-.what_we_do .cards .target h2 +p{
+.what_we_do .cards .target h2 + p{
     text-align: center;
     line-height: 35px;
     margin-top: 10%;
