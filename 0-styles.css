@@ -188,11 +188,11 @@
     text-align: center;
 }
 
-/*** Media queries - 700px ***/
+/*** Media queries - 767px ***/
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 767px){
     
-    /** First section: 700px **/
+    /** First section: 767px **/
 
     /* Nav mediea query styles 
         =============================== */
@@ -233,11 +233,11 @@
 
 }
 
-/*** Media queries - 400px ***/
+/*** Media queries - 480px ***/
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
     
-    /* First section: 400px */
+    /* First section: 480px */
 
     /* Nav mediea query styles 
         =============================== */
